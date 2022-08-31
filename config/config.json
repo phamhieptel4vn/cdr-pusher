@@ -1,0 +1,26 @@
+{
+  "main": {
+    "port": "8000",
+    "log_type": "FILE",
+    "log_level": "debug",
+    "log_file": "tmp/console.log",
+    "redis": "enabled",
+    "notify": [
+      "mail"
+    ],
+    "api_cdr_url": "https://api-pbx01.tel4vn.com/v1/cdr/queue"
+  },
+  "redis": {
+    "address": "localhost:6379",
+    "database": 0,
+    "password": ""
+  },
+  "smtp": {
+    "server": "smtp.gmail.com",
+    "username": "noreply@tel4vn.com",
+    "password": "klcszlredhdlsmww",
+    "receivers": [
+      "tech@tel4vn.com"
+    ]
+  }
+}
